@@ -20,7 +20,7 @@ import http from './utils/http' // axios的封装
 
 import format from './utils/format' // 工具类
 
-format.run()
+// format.run()
 
 
 export default function (Vue, { appOptions, router, head, isClient }) {

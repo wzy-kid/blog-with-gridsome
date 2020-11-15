@@ -116,7 +116,6 @@ function apiAxios(method, url, param, headers = null) {
         }
       }
     }).catch(e => {
-      log(e)
     })
   })
 }

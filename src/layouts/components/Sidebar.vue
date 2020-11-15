@@ -79,7 +79,6 @@ export default {
   },
   methods: {
     onSelect(index) {
-      log(index);
       this.$router.push(index);
     },
     // openTokenDialog() {

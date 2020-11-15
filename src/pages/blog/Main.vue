@@ -163,7 +163,6 @@ export default {
     },
   },
   mounted() {
-    log(this.$page.blogs);
   },
   methods: {
     // list() {

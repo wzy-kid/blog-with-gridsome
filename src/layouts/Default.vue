@@ -273,7 +273,6 @@ export default {
   },
   watch: {
     "$refs.music.currentTime": function () {
-      console.log(this.$refs.music.currentTime);
     },
   },
   created() {
