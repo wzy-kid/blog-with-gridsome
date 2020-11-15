@@ -12,7 +12,7 @@
         ';'
       "
     >
-      <div style="position: absolute; top: 20px; right: 20px; z-index: 2">
+      <!-- <div style="position: absolute; top: 20px; right: 20px; z-index: 2">
         <el-tooltip
           effect="dark"
           :content="fullButton.full ? '退出' : '全屏'"
@@ -24,7 +24,7 @@
             circle
           ></el-button>
         </el-tooltip>
-      </div>
+      </div> -->
       <div
         v-for="(item, index) in randomIcon"
         :key="'ri' + index"
@@ -343,15 +343,15 @@ export default {
       }
       this.randomIcon[index]["left"] = left;
     },
-    full() {
-      if (!this.fullButton.full) {
-        this.$util.fullScreen();
-        this.fullButton.full = true;
-      } else {
-        this.$util.fullExit();
-        this.fullButton.full = false;
-      }
-    },
+    // full() {
+    //   if (!this.fullButton.full) {
+    //     this.$util.fullScreen();
+    //     this.fullButton.full = true;
+    //   } else {
+    //     this.$util.fullExit();
+    //     this.fullButton.full = false;
+    //   }
+    // },
     listenMusic() {
       if (!this.$refs.music) {
         return;
