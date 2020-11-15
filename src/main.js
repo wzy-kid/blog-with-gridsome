@@ -16,7 +16,7 @@ import './assets/css/index.css'
 // import 'vant/lib/vant-css/index.css'
 
 
-import http from './utils/http' // axios的封装
+// import http from './utils/http' // axios的封装
 
 import format from './utils/format' // 工具类
 
@@ -29,7 +29,7 @@ export default function (Vue, { appOptions, router, head, isClient }) {
 
   Vue.use(ElementUI)
 
-  Vue.prototype.$http = http
+  // Vue.prototype.$http = http
   Vue.prototype.$format = format
 
   Vue.prototype.$markdown = function (value) {
